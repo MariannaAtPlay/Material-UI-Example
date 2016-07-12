@@ -14,6 +14,12 @@ const config = {
     filename: 'app.js', // Name of output file
   },
   plugins: [
+    // Define production build to allow React to strip out unnecessary checks
+    new webpack.DefinePlugin({
+      'process.env':{
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
     // Minify the bundle
     new webpack.optimize.UglifyJsPlugin({
       compress: {
