@@ -27,21 +27,18 @@ class Main extends Component {
   constructor(props, context) {
     super(props, context);
 
-    this.handleRequestClose = this.handleRequestClose.bind(this);
-    this.handleTouchTap = this.handleTouchTap.bind(this);
-
     this.state = {
       open: false,
     };
   }
 
-  handleRequestClose() {
+  handleRequestClose = () => {
     this.setState({
       open: false,
     });
   }
 
-  handleTouchTap() {
+  handleTouchTap = () => {
     this.setState({
       open: true,
     });
