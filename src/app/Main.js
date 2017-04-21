@@ -27,13 +27,13 @@ import DeepDownTheTree from './DeepDownTheTree';
 // const muiTheme = getMuiTheme(darkBaseTheme);
 
 
-// colors:
-// const muiTheme = getMuiTheme({
-//   palette: {
-//     primary1Color: orange500,
-//     accent1Color: deepOrange500
-//   }
-// });
+//colors:
+const muiTheme = getMuiTheme({
+  palette: {
+    primary1Color: orange500,
+    accent1Color: deepOrange500
+  }
+});
 
 //style for Paper
 const style = {
@@ -74,8 +74,7 @@ class Main extends Component {
 
     return (
 
-      <MuiThemeProvider>
-          {/* muiTheme={muiTheme} */}
+      <MuiThemeProvider muiTheme={muiTheme}>
           <div className="container">
             <AppBar title="Material-UI"/>
             <Dialog open={this.state.open} title="This is my secret" actions={standardActions} onRequestClose=    {this.handleRequestClose}>
@@ -87,6 +86,7 @@ class Main extends Component {
             </Paper>
 
             <br />
+            {/* this is my custom component */}
             <DeepDownTheTree />
 
             <br />
@@ -105,7 +105,7 @@ class Main extends Component {
 }
 
 
-
+// this data is used by the AutoComplete component
 const fruit = [
   'Apple', 'Apricot', 'Avocado',
   'Banana', 'Bilberry', 'Blackberry', 'Blackcurrant', 'Blueberry',
