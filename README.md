@@ -1,4 +1,4 @@
-# [Material-UI](http://callemall.github.io/material-ui/) - Example Webpack Project
+# [Material-UI](http://callemall.github.io/material-ui/) - Example Project
 
 This is an example project that uses [Material-UI](http://callemall.github.io/material-ui/).
 
@@ -6,7 +6,7 @@ This is an example project that uses [Material-UI](http://callemall.github.io/ma
 
 After cloning the repository, install dependencies:
 ```sh
-cd <project folder>/material-ui/examples/webpack-example
+cd <project folder>
 npm install
 ```
 
