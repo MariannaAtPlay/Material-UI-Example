@@ -6,3 +6,7 @@ body {
   font-size: 13px;
   line-height: 20px;
 }
+
+.container {
+    text-align: center;
+}
