@@ -78,7 +78,7 @@ class Main extends Component {
           <div className="container">
             <AppBar title="Material-UI"/>
             <Dialog open={this.state.open} title="This is my secret" actions={standardActions} onRequestClose=    {this.handleRequestClose}>
-              I didn't get much sleep last night
+              I didn&#39;t get much sleep last night
             </Dialog>
             <Paper style={style} zDepth={3} circle={true}>
               <h1>Example Project</h1>
